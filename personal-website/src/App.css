@@ -1,0 +1,51 @@
+.App {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header p {
+  margin: 0;
+  color: #666;
+}
+
+main section {
+  margin-bottom: 20px;
+}
+
+main h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+main p,
+main ul {
+  margin: 10px 0;
+}
+
+main ul {
+  padding-left: 20px;
+}
+
+main ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  color: #666;
+}
