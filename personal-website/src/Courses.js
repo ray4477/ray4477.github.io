@@ -1,25 +1,29 @@
+// Courses.js
 import React from 'react';
 import { aboutMeText } from './constants';
+
+import coursesBySemester from './coursesData';
+import './Courses.css'; // CSS for styling
 
 const Courses = () => {
   return (
     <main>
-      <section>
+            <section>
         <p style={{ whiteSpace: 'pre-line' }}>{aboutMeText}</p>
       </section>
       <h2>Courses</h2>
-
-        <ul>
-          <li>
-            <strong>Probability and Stochastic Processes (ECE 381J):</strong> 
-          </li>
-          <li>
-            <strong>Project 2:</strong> Description of your project 2.
-          </li>
-          <li>
-            <strong>Project 3:</strong> Description of your project 3.
-          </li>
-        </ul>
+      {coursesBySemester.map((semester, index) => (
+        <div key={index} className="semester-container">
+          <h2 className="semester-title">{semester.semester}</h2>
+          <div className="courses-list">
+            {semester.courses.map(course => (
+              <div key={course.id} className="course-item">
+                <ul><strong>{course.name}</strong> {course.description}</ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
     </main>
   );
 };
