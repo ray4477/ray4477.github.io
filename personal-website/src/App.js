@@ -1,13 +1,31 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
+import AboutMe from './AboutMe';
+import Courses from './Courses';
+import Life from './Life';
 
 const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <MainContent />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+
+        <nav>
+          <ul className="nav-links">
+            <li><Link to="/">About Me</Link></li>
+            <li><Link to="/courses">Courses</Link></li>
+            <li><Link to="/life">Life</Link></li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<AboutMe />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/life" element={<Life />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 
@@ -17,38 +35,6 @@ const Header = () => {
       <h1>Raymond Jiang</h1>
       <p>Student at UT Austin</p>
     </header>
-  );
-};
-
-const MainContent = () => {
-  const aboutMeText = `Hello! My name is Raymond Jiang and I am currently a senior studying Electrical and Computer Engineering @ UT Austin.
-  
-  My main interests are in low level software development (Embedded Systems, Operating Systems, etc) and Signal Processing/Machine learning`;
-  return (
-    <main>
-      <section>
-        <p style={{ whiteSpace: 'pre-line' }}>{aboutMeText}</p>
-        
-      </section>
-      <section>
-        <h2>Projects</h2>
-        <ul>
-          <li>
-            <strong>Project 1:</strong> Description of your project 1.
-          </li>
-          <li>
-            <strong>Project 2:</strong> Description of your project 2.
-          </li>
-          <li>
-            <strong>Project 3:</strong> Description of your project 3.
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-      </section>
-    </main>
   );
 };
 

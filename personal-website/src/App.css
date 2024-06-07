@@ -49,3 +49,39 @@ footer {
   border-top: 1px solid #ddd;
   color: #666;
 }
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: left; /* Center the links */
+}
+
+.nav-links li {
+  margin: 0 10px; /* Adjust margin between buttons */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: #d1d9e2;
+  padding: 10px 20px; /* Increase padding for larger buttons */
+  border-radius: 5px;
+  font-size: 16px; /* Increase font size */
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #757575; /* Change color on hover */
+}
+
+.cute-animation {
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease-out; /* Smooth transition */
+}
+
+.cute-animation:hover {
+  transform: translateY(-5px); /* Move the element up */
+}
