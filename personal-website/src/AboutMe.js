@@ -24,12 +24,16 @@ const AboutMe = () => {
           <li>
             <strong><a href="https://github.com/ray4477/RayOS">RayOS</a>:</strong> Hobby operating system inspired by PintOS and OSDev. 
           </li>
+          <li>
+            <strong>This website!</strong> Built using React and Github Pages.
+          </li>
         </ul>
       </section>
       <section>
         <h2>Contact</h2>
         <p>Email: <a href="mailto:raymondjiang2014@gmail.com">raymondjiang2014@gmail.com</a></p>
         <p>Github: <a href="https://github.com/ray4477">link</a></p>
+        <p>Linkedin: <a href="https://www.linkedin.com/in/raymondjiang7/">link</a></p>
       </section>
     </main>
   );
