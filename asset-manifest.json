@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.a56222de.css",
-    "main.js": "/static/js/main.2e84c1ef.js",
+    "main.css": "/static/css/main.d8208d62.css",
+    "main.js": "/static/js/main.cadd4b1e.js",
     "static/media/pose_dipimu.png": "/static/media/pose_dipimu.6981fb660aa4cb6c23d4.png",
     "static/media/pcb_nrf.png": "/static/media/pcb_nrf.1304c057712bff45f64f.png",
     "index.html": "/index.html",
-    "main.a56222de.css.map": "/static/css/main.a56222de.css.map",
-    "main.2e84c1ef.js.map": "/static/js/main.2e84c1ef.js.map"
+    "main.d8208d62.css.map": "/static/css/main.d8208d62.css.map",
+    "main.cadd4b1e.js.map": "/static/js/main.cadd4b1e.js.map"
   },
   "entrypoints": [
-    "static/css/main.a56222de.css",
-    "static/js/main.2e84c1ef.js"
+    "static/css/main.d8208d62.css",
+    "static/js/main.cadd4b1e.js"
   ]
 }
