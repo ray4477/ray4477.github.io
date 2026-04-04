@@ -4,6 +4,7 @@ import './App.css';
 import AboutMe from './AboutMe';
 import Courses from './Courses';
 import Life from './Life';
+import GPSSatellites from './GPSSatellites';
 
 const App = () => {
   return (
@@ -16,12 +17,14 @@ const App = () => {
             <li><Link to="/">Projects</Link></li>
             <li><Link to="/courses">Courses</Link></li>
             <li><Link to="/life">Life</Link></li>
+            <li><Link to="/gps-satellites">GPS Satellites</Link></li>
           </ul>
         </nav>
         <Routes>
           <Route path="/" element={<AboutMe />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/life" element={<Life />} />
+          <Route path="/gps-satellites" element={<GPSSatellites />} />
         </Routes>
         <Footer />
       </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { aboutMeText } from './constants';
-
+import pcbImage from './images/pcb_nrf.png';
+import poseImage from './images/pose_dipimu.png';
 const AboutMe = () => {
   
   return (
@@ -11,6 +12,23 @@ const AboutMe = () => {
       <section>
         <h2>Projects</h2>
         <ul>
+          <li>
+            <strong><a href="https://github.com/ray4477/Senior-design-fit-ml">Dance Wearables</a>:</strong> {`Making wearables to track dance movements and display 3D pose for Senior Design.` }
+            <br />
+            {`Below is a neat
+            picture of the PCB layout (4cm x 4cm). Also a picture of the 3D pose from east coast swing! `}
+            <br />  
+            <img 
+              src={pcbImage}
+              alt="PCB layout" 
+              style={{ width: '400px', height: '350px' }} 
+            />
+            <img 
+              src={poseImage}
+              alt="3D pose" 
+              style={{ width: '400px', height: '350px' }} 
+            />
+          </li>
           <li>
             <strong>Autonomous Drone:</strong> {`My roommate and I both worked at Drone companies so we decided to try making a drone ourselves.`}
             <br />
