@@ -57,6 +57,11 @@ footer {
   justify-content: left; /* Center the links */
 }
 
+/* Ensure regular lists have bullets */
+main ul:not(.nav-links) {
+  list-style-type: disc;
+}
+
 .nav-links li {
   margin: 0 10px; /* Adjust margin between buttons */
 }
