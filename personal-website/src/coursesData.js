@@ -1,5 +1,21 @@
 // coursesData.js
 const coursesBySemester = [
+    {
+    semester: 'Spring 2026',
+    courses: [
+      { id: 1, name: 'Reinforcement Learning' },
+      { id: 2, name: 'Parallel Algorithms' },
+      { id: 4, name: 'SysML' },
+    ]
+  },
+  {
+    semester: 'Spring 2025',
+    courses: [
+      { id: 1, name: 'Wireless Communications' },
+      { id: 2, name: 'Neural Engineering' },
+      { id: 4, name: 'Senior Design II', description: 'Wearables!' },
+    ]
+  },
   {
     semester: 'Fall 2024',
     courses: [

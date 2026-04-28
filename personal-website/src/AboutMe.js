@@ -29,11 +29,7 @@ const AboutMe = () => {
               style={{ width: '400px', height: '350px' }} 
             />
           </li>
-          <li>
-            <strong>Autonomous Drone:</strong> {`My roommate and I both worked at Drone companies so we decided to try making a drone ourselves.`}
-            <br />
-            {`This is very much a work in progress.`}
-          </li>
+
           <li>
             <strong><a href="https://github.com/lhr-solar/BPS">Solar Car BMS</a>:</strong> I work on the battery management system's firmware for UT's solar car team. I've worked on our CANBus drivers, 
             PID fan control, and SIL testing for our system. I've also worked a little bit on PCB layout for our volttemp monitor board and have previously worked
